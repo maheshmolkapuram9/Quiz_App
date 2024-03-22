@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  background: rgb(226,33,238);
+  background: linear-gradient(45deg, rgba(226,33,238,1) 0%, rgba(185,18,196,1) 35%, rgba(124,7,130,1) 100%);
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.container{
+  max-width: 600px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  gap: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h1{
+  margin: auto;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgb(226,33,238);
+  border-bottom: 2px solid rgb(226, 33, 238);
+}
+
+.container h3{
+  font-weight: bolder;
+}
+
+.container .options{
+  border: 2px solid #adb5bd;
+  border-radius: 6px;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.container .correct{
+  background: #d3f9d8;
+  border: 2px solid #2f9e44;
+}
+
+.container .wrong{
+  background: #ffe3e3;
+  border: 2px solid #e03131;
+}
+
+.container button{
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: max-content;
+  padding: 0.3rem 2rem;
+  margin: 1rem auto 0 auto;
+  background: #4263eb;
+  color: #f8f9fa;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.container .question_number{
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+@media screen and (max-width:500px) {
+  .container{
+    margin:2.5% auto;
+    width: 95%;
+    min-width: 300px;
+  }
+}
